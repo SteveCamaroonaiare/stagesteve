@@ -1,7 +1,28 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Redressed{
+    font-family: "Redressed", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .montserrat{
+    font-family: "Montserrat", sans-serif;
+    
+    
+  }
+  .merriweather {
+    font-family: "Merriweather", serif;
+    font-size: 50px;
+  }
 .cc-navbar{
     background-color: rgba(19, 45, 117, 0.6);
     box-shadow: 2px solid rgb(0, 0, 0, .6);
+    z-index: 99;
+}
+.navbar-brand {
+    font-size: 30px; /* Ajuste la taille selon ton besoin */
 }
 .cc-navbar .nav-link{
     border-bottom: 1px solid transparent ;
@@ -9,19 +30,47 @@
 }
 .cc-navbar .nav-link:hover{
     padding-bottom: 20px;
-    border-bottom: var(--bs-teal);
+    border-bottom: #ebe7e1;
+}
+.banniere{
+    background: linear-gradient( rgba(19, 45, 117, 0.6),rgba(19, 45, 117, 0.6)) ,
+     url("../stagesteve/assets/images/image1.jpg") center center fixed no-repeat ;
+     height: 800px;
+    background-size: cover;
+}
+span{
+    font-size: 25px;
+    font-family: merriweather;
+}
+.text-normal {
+    text-transform: none;
+}
+.cc-titre{
+text-align: center;
+padding: 30px 0 50px;
+text-transform: uppercase;
+font-size: blue;
+}
+.cc-titre::after{
+    content: "";
+    width: 300px;
+    height: 3px;
+    display: block;
+    background: #2c95d0;
+    justify-self: center;
+    margin: 10px;
 }
 
 
 .btn-order{
-    color: white;
-    border-color: var(--bs-teal);
-    background-color: var(--bs-teal);
+    color: rgb(0, 0, 0);
+    border-color: #ebe7e1;
+    background-color: #ebe7e1;
 }
 .btn-order:hover,
 .btn-order:active{
     color: white;
-    border-color: var(--bs-teal);
+    border-color: #e4e1eb;
     background:rgba(19, 45, 117, 0.6);
 }
 
