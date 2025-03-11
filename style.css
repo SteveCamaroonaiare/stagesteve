@@ -1,0 +1,27 @@
+
+.cc-navbar{
+    background-color: rgba(19, 45, 117, 0.6);
+    box-shadow: 2px solid rgb(0, 0, 0, .6);
+}
+.cc-navbar .nav-link{
+    border-bottom: 1px solid transparent ;
+    transition: padding-bottom 0.4s ease-in-out,border-color 0.3s ease;
+}
+.cc-navbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-bottom: var(--bs-teal);
+}
+
+
+.btn-order{
+    color: white;
+    border-color: var(--bs-teal);
+    background-color: var(--bs-teal);
+}
+.btn-order:hover,
+.btn-order:active{
+    color: white;
+    border-color: var(--bs-teal);
+    background:rgba(19, 45, 117, 0.6);
+}
+
