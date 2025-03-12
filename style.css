@@ -21,6 +21,21 @@
     box-shadow: 2px solid rgb(0, 0, 0, .6);
     z-index: 99;
 }
+.barre_caché{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #bd8d8d;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(204, 175, 175);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+ }
 .navbar-brand {
     font-size: 30px; /* Ajuste la taille selon ton besoin */
 }
@@ -84,8 +99,30 @@ font-size: blue;
     justify-self: center;
     margin: 10px;
 }
+.cc-service {
+    background: linear-gradient( rgba(19, 45, 117, 0.6),rgba(19, 45, 117, 0.6)) ,
+    url("../stagesteve/assets/images/img2.jpg") center center fixed no-repeat ;
+    min-height: 100vh;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.cc-service .nav-link{
+    font-size: 30px;
+}
+.cc-service .nav-link:hover{
+    color: black;
+    background: #ebe7e1;
+}
+.card-img-top {
+    width: 100%; /* Adapte l'image à la largeur de la carte */
+    height: 300px; /* Ajuste la hauteur (modifiable selon besoin) */
+    object-fit: cover; /* Garde l'image bien cadrée sans déformation */
+}
 
-
+.cc-footer {
+    height: 400px;
+}
 .btn-order{
     color: rgb(0, 0, 0);
     border-color: #ebe7e1;
