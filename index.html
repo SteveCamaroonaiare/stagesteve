@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sercices</title>
+    <title>Bootstrap Test</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Lien vers Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
      <!-- Lien vers css -->
       <link rel="stylesheet" href="style.css">
-       <!-- Lien vers index.html -->
-        
+      
        <!-- Lien cdn boostrap pour social media -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <nav class="cc-navbar navbar navbar-expand-lg position-fixed navbar-dark my-1 w-100">
         <div class="container-fluid ">
-<<<<<<< HEAD
           <a class="navbar-brand mx-4 py-3 fw-bolder merriweather"  href="#">Thérapure</a>
-=======
-          <a class="navbar-brand mx-4 py-3 "  href="#">Thérapure</a>
->>>>>>> f7fa23d (forth commit)
         
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,16 +42,16 @@
 
             <ul class="navbar-menu navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item ">
-                <a class="nav-link pe-4  montserrat" aria-current="page" href="#">Accueil</a>
+                <a class="nav-link pe-4 active montserrat" aria-current="page" href="#">Accueil</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link pe-4 active montserrat" href="#">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pe-4  montserrat" href="#">A propos</a>
+                <a class="nav-link pe-4 active montserrat" href="#">A propos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pe-4  montserrat" href="#">Contact</a>
+                <a class="nav-link pe-4 active montserrat" href="#">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="btn btn-order montserrat" href="#">prenez un rendez-vous</a>
@@ -72,62 +67,271 @@
           </div>
         </div>
       </nav>
-    
-
-    <section class="sections heros" id="home" aria-label="hero" data-section>
-      <div class="containers">
-        <ul class="has-scrollbar">
-          <li class="scrollbar-item">
-            <div class="heros-cards " >
-              <div class="cards-contents">
-                <h1 class="h1 hero-title">
-                  Access bar <br>soins de visage
-                </h1>
-                <p class="heros-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo obcaecati quisquam temporibus.
-                </p>
-                <p class="register">Lorem, ipsum dolor.</p>
-                <a href="" class="btns btns-secondary">Reverser maintenant</a>
+    <section class="banniere pt-5 d-flex flex-column justify-content-center align-item-center  ">
+      <div class="container  text-white my-5 py-5">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h1 class=" text-capitalize py-3 banniere-description merriweather">Équilibre & Harmonie : Votre Bien-Être, Notre Priorité. 
+              <br><span class="text-normal" >Retrouvez sérénité et vitalité entre des mains expertes</span></h1>
+            <p >
+              <button class="btn btn-order rounded-0 me-4 montserrat">En savoir plus</button>
+              <button class="btn btn-outline-info rounded-0 montserrat">Reverser</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <section class="disponible montserrat py-5">
+      <div class="container">
+        <h2 class=" cc-titre montserrat">Découvrez Nos Prestations </h2>
+        <div class="row">
+          <div class="card mb-3 border-0 rounded-0" >
+            <div class="row  ">
+              <div class="col-md-6">
+                <img src="assets/images/imageb1.jpg" class=" img-fluid " alt="...">
               </div>
-              <div class="has-bg-image" style="background-image: url('assets/images/a.jpg');">
-              </div>
-            </div>
-          </li>
-          <li class="scrollbar-item">
-            <div class="heros-cards has-bg-image" style="background-image: url('assets/images/i1.jpg')">
-              <div class="cards-contents">
-                <h1 class="h1 heros-titles">
-                  Access bar <br>soins de visage
-                </h1>
-                <p class="heros-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo obcaecati quisquam temporibus.
-                </p>
-                <p class="register">Lorem, ipsum dolor.</p>
-                <a href="" class="btns btns-primary">Reverser maintenant</a>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Soin Relaxant du Visage 🌿✨</h5>
+                  <p class="card-text">Un soin doux et profond pour libérer les tensions, rééquilibrer l’énergie et illuminer votre teint. Détendez-vous entre des mains expertes et retrouvez bien-être et sérénité. ✨💆‍♀️</p>
+                  <p class="card-text"><a href="#" class="text-muted btn">Last updated 3 mins ago</a></p>
+                </div>
               </div>
             </div>
-          </li>
-          <li class="scrollbar-item">
-            <div class="heros-cards has-bg-image" style="background-image: url('assets/images/i2.jpg');">
-              <div class="cards-contents">
-                <h1 class="h1 heros-titles">
-                  Access bar <br>soins de visage
-                </h1>
-                <p class="heros-texts">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo obcaecati quisquam temporibus.
-                </p>
-                <p class="register">Lorem, ipsum dolor.</p>
-                <a href="" class="btns btns-primary">Reverser maintenant</a>
+          </div>
+          <div class="card my-5 border-0 rounded-0" >
+            <div class="row ">
+              <div class="col-md-6" >
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><a href="#" class="text-muted btn">Last updated 3 mins ago</a></p>
+                </div>
+                
+              </div>
+              <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                      <img src="assets/images/image1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/i2.jpg" class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/a.jpg" class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>              
               </div>
             </div>
-          </li>
-        </ul>
+          </div> 
+          <div class="card mb-3 border-0 rounded-0" > 
+            <div class="row my-3">
+              <div class="col-md-6">
+                <img src="assets/images/i4.jpg" class="img-fluid " alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><a href="#" class="text-muted btn">Last updated 3 mins ago</a></p>
+                </div>
+              </div>
+            </div>
+          </div>  
+          
+        </div>
       </div>
     </section>
-    
+    <section class="cc-service py-5 my-5">
+      <div class="container my-5">
+
+        <div class="row ">
+          <h1 class="text-center text-light merriweather">Nos Services</h1>
+          
+            <div class="card text-center bg-transparent mb-4">
+              <div class="card-header ">
+                <ul class="nav nav-pills card-header-pills  justify-content-center  ">
+                  <li class="nav-item">
+                    <a class="nav-link  merriweather active" href="#">Soins</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link merriweather" href="#" >access bars</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link merriweather " >face lift</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body text-light">
+                <h5 class="card-title ">Soins et Béauté du corps</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur,ad illum maiores tempore?</p>
+                <a href="#" class="btn btn-primary">Découvrir</a>
+              </div>
+            </div>
+          
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/image2.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/i2.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/image1.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/a.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order-form py-5 mb-5">
+      <div class="container">
+        <h2 class="montserrat text-center text-light mb-4">S'enregistrer <br><span class="text-normal montserrat " >En tant que client régulier pour bénificier de réductions</span></h2>
+        <form >
+          <div class="row">
+            <div class="col-md-6 col-sm">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="votre nom"/>
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-utesils"></i></label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>choisir un service</option>
+                  <option value="1">1:access bars</option>
+                  <option value="2">2:face lift</option>
+                  
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-sort-numeric-up-alt"></i></label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected> le nombre de personnes</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  
+                </select>
+              </div>
+              
+            </div>
+            <div class="col-md-6 col-sm">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="votre email"/>
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-at"></i></span>
+
+              </div>
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="votre numero de telephone"/>
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span>
+
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="adresse"/>
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-home"></i></span>
+
+              </div>
+              
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Preciser le nombre de personnes</i></span>
+              <input type="text" class="form-control" placeholder="Ex:12"/>
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">Autres informations</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="cc-footer bg-dark " >
+      <div class="container ">
+        <div class="row">
+          <div class="col text-light">
+            <a href="" class="navbar-brand   fw-bolder merriweather text-decoration-none text-light ">Therapure</a>
+            <p class="mx-2">stevekamguia22@gmail.com</p>
+            <p class="mx-2">0657946202</p>
+            <p class="mb-0 mx-2 mb-5">CNSS takadoum,Rabat</p>
+          </div>
+          <div class="col"><a href="" class=" nav-link pe-4 active montserrat text-decoration-none text-light">Accueil</a></div>
+          <div class="col"><a href="" class="nav-link pe-4 active montserrat text-decoration-none text-light">Services</a></div>
+          <div class="col"><a href="" class="nav-link pe-4 active montserrat text-decoration-none text-light">A propos</a></div>
+          <div class="col"><a href="" class=" nav-link pe-4 active montserrat text-decoration-none text-light">Contact</a></div>
+          <div class="col text-decoration-none text-light">
+            <h1 class="nav-link pe-4 active montserrat fs-6">Social Medias</h1>
+            <div>
+              <a href=""><i class="bi bi-instagram fs-3 me-1"></i></a>
+              <a href=""><i class="bi bi-facebook fs-3 me-1"></i></a>
+              <a href=""><i class="bi bi-tiktok fs-3 me-1"></i></a>
+              <a href=""><i class="bi bi-snapchat fs-3 me-1"></i></a>
+            </div>
+          </div>
+          <div class="my-5">
+            <hr class="text-light">
+          <div class="d-flex justify-content-between text-light ">
+            <p> 2025 &copy;lutrecia 2018. All Rights reserved</p>
+            <div>
+              <a href="" class="text-decoration-none text-light">terms of use</a>
+              <a href="" class="text-decoration-none text-light">Privacy Policy</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Script JavaScript Bootstrap (optionnel, pour certains composants comme les modals) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script>
+      function MontrerLaBarreCaché(){
+        const barre_caché=document.querySelector('.barre_caché')
+        barre_caché.style.displayflex
+      }
+    </script>
 </body>
 </html>
