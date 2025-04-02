@@ -228,11 +228,6 @@ font-size: blue;
 
 li{list-style: none;}
 
-<<<<<<< HEAD
-a,
-=======
-
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 img,
 span,
 input,
@@ -325,10 +320,7 @@ body{
     padding: 10px 30px;
     border-radius: var(--radius-3);
     transition: var(--transition-1);
-<<<<<<< HEAD
-=======
     margin-top: 3px;
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 }
 .btn-primary,
 .btn-secondary:is(:hover , :focus){
@@ -943,10 +935,7 @@ ____________________________________*/
         padding-block: 18px;
         background-color: var(--white);
         z-index: 4;
-<<<<<<< HEAD
-=======
         margin-left: 60px;
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 
     }
     .navbar .navbar-list{
@@ -1088,13 +1077,10 @@ ____________________________________*/
     font-size: var(--fs-7);
     padding-block: 5px;
 }
-<<<<<<< HEAD
-=======
 .ligne{
     display: flex;
     flex-direction: column;
 }
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 .footer-link:is(:hover, :focus){text-decoration: underline;}
 
 .newsletter-title{
@@ -1169,11 +1155,7 @@ ____________________________________*/
     position: fixed;
     bottom: 20px;
     right: 30px;
-<<<<<<< HEAD
-    background-color: var(--white);
-=======
     background-color: #0000004d;
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
     color: var(--hoockers-green);
     font-size: 22px;
     padding: 12px;
@@ -1184,14 +1166,9 @@ ____________________________________*/
     visibility: hidden;
     transition: var(--transition-1);
 }
-<<<<<<< HEAD
-.back-top-btn:is(:hover, :focus){
-    background-color: var(--hoockers-green);
-=======
 
 .back-top-btn:is(:hover, :focus){
     background-color:#2c95d0;
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
     color:var(--white);
 }
 
@@ -1311,33 +1288,16 @@ ____________________________________*/
 }
 
 
-<<<<<<< HEAD
-@media (max-width:767px) {
-=======
 @media (max-width:768px) {
     .contact .nav-open-btn{
         display: none;
     }
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
     .containers form{
         max-width: 80%;
         height: auto;
 
     }
     .containers form #lastName,
-<<<<<<< HEAD
-.containers form #mobile {
-    margin-left: 0;
-}
-
-.containers form h4{
-margin-bottom: 30px;}
-
-.containers form textarea{
-    min-width:  70px;
-}
-    
-=======
     .containers form #mobile {
         margin-left: 0;
     }
@@ -1353,16 +1313,10 @@ margin-bottom: 30px;}
  .ff{
         display: block;
     }
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 }
 
 
 
-<<<<<<< HEAD
-@media(min-width:587px) {
-    /* Styles pour les tablettes */
-    
-=======
 @media(min-width:767px) {
     
     /* Styles pour les tablettes */
@@ -1373,7 +1327,6 @@ margin-bottom: 30px;}
         margin-left: 280px;
         margin-top: 20px;
     }
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
     .containers form{
         max-width: 80%;
         height: auto;
@@ -1390,13 +1343,9 @@ margin-bottom: 30px;}
 .containers form textarea{
     min-width:  100%;
 }
-<<<<<<< HEAD
-    
-=======
 .contacts{
     display: none;
 } 
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 }
 
 
@@ -1411,10 +1360,7 @@ position: relative;
 width: 100%;
 height: 100vh;
 overflow: hidden;
-<<<<<<< HEAD
-=======
 margin-bottom: 30px;
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 }
 
 .tete video {
@@ -1439,11 +1385,7 @@ object-fit: cover;
 }
 .ecrit .hero-text{
     font-weight: normal;
-<<<<<<< HEAD
-    color: #80878d;
-=======
     color: #7d7f81;
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 }
 .ecrit .price{
     color: black;
@@ -1522,20 +1464,6 @@ iframe:hover{
 }
 
 .grid {
-<<<<<<< HEAD
-    color: black;
-    margin-block: 20px;
-    
-}
-
-.grid{
-    
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 15px;
-        
-        }
-=======
     text-align: center;
         text-transform: uppercase;
         font-size: 15px;
@@ -1553,7 +1481,6 @@ iframe:hover{
 
 
 
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
         
 
   
@@ -1563,13 +1490,10 @@ iframe:hover{
 }
 .card{
     background-color: #f4fbff;
-<<<<<<< HEAD
-=======
     margin: 10px;
 }
 .card img{
     border-radius: 22px;
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 }
 .card-group{
     display: flex;
@@ -1597,26 +1521,6 @@ iframe:hover{
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-
-/*
-.cc-titre{
-    text-align: center;
-    padding: 30px 0 50px;
-    text-transform: uppercase;
-    font-size: blue;
-    }
-    .cc-titre::after{
-        content: "";
-        width: 300px;
-        height: 3px;
-        display: block;
-        background: #2c95d0;
-        justify-self: center;
-        margin: 10px;
-    }
-    */
-=======
 @media screen and (max-width: 768px) {
 
     .tete .container1 .ecrit{
@@ -1668,7 +1572,6 @@ iframe:hover{
     
     
 }
->>>>>>> 130f6c8 (dernier commit - Ajout des fichiers)
 
 
 
