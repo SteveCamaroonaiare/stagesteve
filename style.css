@@ -55,6 +55,31 @@
     z-index: 4;
 
 }
+.banniere {
+  position: relative; /* pour que le contenu reste au-dessus */
+  background-image: url('assets/images/a.jpg');
+  background-size: cover; /* couvre toute la section */
+  background-position: center center; /* centré */
+  background-repeat: no-repeat;
+  min-height: 600px; /* adapte la hauteur à ton besoin */
+  color: white; /* texte en blanc */
+}
+
+/* Si tu veux un overlay sombre pour améliorer la lisibilité du texte */
+.banniere::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(36, 8, 8, 0.5); /* noir transparent à 50% */
+  z-index: 1;
+}
+
+.banniere > .container {
+  position: relative;
+  z-index: 2; /* contenu au-dessus de l’overlay */
+}
+
+
 @media screen and (max-width:768px){
     .cc-navbar .navbar-menu{
         display: block;
@@ -87,7 +112,7 @@ a:hover {
     color: #6c757d !important; /* Ajuste la couleur du texte pour correspondre au design */
 }
 
-.banniere,
+
 .order-form{
     background: linear-gradient( rgba(19, 45, 117, 0.6),rgba(19, 45, 117, 0.6)) ,
      url("../stagesteve/assets/images/image1.jpg") center center fixed no-repeat ;
@@ -488,66 +513,107 @@ ____________________________________*/
     color: var(--black_70);
 }
 
-.sidebar{z-index: 5;}
-
-
-.mobile-navbar{
-    background-color: var(--white);
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    max-width: 350px;  /*sil ya un soucis mettre max-widht:100%*/
-    width: 100%;
-    z-index: 6;
-    transform: translateX(-100%);
-    visibility: hidden;
-    transition: 0.25s var(--cubic-in);
-}
-.mobile-navbar.active{
-    visibility: visible;
-    transform: translateX(0);
-    transition: 0.4s var(--cubic-out);
+.sidebar {
+  z-index: 1000;
 }
 
-.mobile-navbar .wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-block-end: 55px;
-}
-.nav-close-btn{
-    font-style: 28px;
-    color: var(--hoockers-green);
-}
-.nav-close-btn ion-icon{--ionicon-stroke-width:40px}
-
-.mobile-navbar .nav-link{
-    color: var(--black);
-    font-size: var(--fs-8);
-    text-transform: uppercase;
-    font-weight: var(--fw-600);
-    letter-spacing: 1px;
-    padding-block: 5px;
-    transition: var(--transition-1);
+/* Barre latérale mobile */
+.mobile-navbar {
+  background: linear-gradient(135deg, #e0f7fa, #80deea); /* bleu clair dégradé */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  max-width: 320px;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+  z-index: 1050;
+  transform: translateX(-100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
-.mobile-navbar .nav-link:is(:hover, :focus){color: var(--hoockers-green);}
-
-.overlay{
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 5;
-    pointer-events: none;
-    transition: var(--transition-1);
+/* Affichage actif */
+.mobile-navbar.active {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
 }
-.overlay.active{
-    background-color: var(--black_50);
-    pointer-events: all ;
+
+/* En-tête barre */
+.mobile-navbar .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #01579b; /* bleu foncé */
+  text-decoration: none;
+}
+
+/* Bouton de fermeture */
+.nav-close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #01579b; /* bleu foncé */
+  cursor: pointer;
+}
+
+.nav-close-btn ion-icon {
+  --ionicon-stroke-width: 40px;
+}
+
+/* Liste de navigation */
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-link {
+  display: block;
+  color: #01579b; /* bleu foncé */
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.75rem 0;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(1, 87, 155, 0.1); /* ligne subtile */
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  color: #0277bd; /* bleu plus vif */
+}
+
+/* Overlay */
+.overlay {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  pointer-events: none;
+  transition: background-color 0.3s ease;
+}
+
+.overlay.active {
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: all;
 }
 
 
