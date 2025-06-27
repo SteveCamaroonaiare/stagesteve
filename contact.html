@@ -8,54 +8,55 @@
 </head>
 <body>
       
-  <header class="header cachenav">
+  <header  >
+    <div  data-header>
+    <div class="container">
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggle>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        
+       <nav class="cc-navbar navbar navbar-expand-lg position-fixed navbar-dark my-1 w-100">
+        <div class="container-fluid ">
+          
+          <a class="navbar-brand mx-4 py-3 fw-bolder merriweather"  href="#">Thérapure</a>
+        
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            
+
+            <ul class="navbar-menu navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link pe-4 active montserrat" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4 active montserrat" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4 active montserrat" href="about.html">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-4 active montserrat" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-order montserrat" href="#enregistrer">prenez un rendez-vous</a>
+              </li>
+            
+              
+            </ul>
+            
+            
+          </div>
+        </div>
+      </nav>
+      
     
 
-    <div class="header-top " data-header>
-      <div class="container ">
-        <div class="contact">
-          <button class="nav-open-btn" aria-label="open menu" data-nav-toggle>
-            <span class="line line-1"></span>
-            <span class="line line-2"></span>
-            <span class="line line-3"></span>
-          </button>
-        </div>
-
-        <div class="input-wrapper ">
-          <input type="search" name="search" placeholder="Rechercher un expert" class="search-field">
-          <button class="search-submit" aria-label="search">
-            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
-
-        <a href="index.html" class="logo  merriweather ">Théapure</a>
-        <div class="header-actions contacts">
-          <button class="header-action-btn" aria-label="user">
-            <a href="contact.html">
-            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true" ></ion-icon>
-            </a>
-          </button> 
-          
-        </div>
-
-        <nav class="navbar navbar1 ">
-          <ul class="navbar-list">
-            <li  >
-              <a class="navbar-link montserrat" href="index.html">Accueil</a>
-            </li>
-            <li>
-              <a class="navbar-link montserrat" href="services.html">Services</a>
-            </li>
-            <li>
-              <a class="navbar-link montserrat" href="about.html">À propos</a>
-            </li>
-            <li>
-              <a class="navbar-link montserrat" href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+       </div>
+      </header>
 
    <!-- Navbar pour telephone--> 
     <div class="sidebar">
@@ -100,6 +101,7 @@
 
         </form>
     </div>
+    <script src="./assets/js/script.js"></script>
 
     <script>
         document.getElementById("rendezVousForm").addEventListener("submit", function(event) {
