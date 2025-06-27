@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Test</title>
+    <title>Thérapie soin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Lien vers Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,8 +14,19 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <nav class="cc-navbar navbar navbar-expand-lg position-fixed navbar-dark my-1 w-100">
+   <header  >
+    <div  data-header>
+    <div class="container">
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggle>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        
+       <nav class="cc-navbar navbar navbar-expand-lg position-fixed navbar-dark my-1 w-100">
         <div class="container-fluid ">
+          
           <a class="navbar-brand mx-4 py-3 fw-bolder merriweather"  href="#">Thérapure</a>
         
           
@@ -47,10 +58,10 @@
           </div>
         </div>
       </nav>
-      <header class="header contacts">
+      
     
 
-       
+       </div>
       </header>
     
        <!-- Navbar pour telephone--> 
@@ -58,7 +69,7 @@
           <div class="mobile-navbar " data-navbar>
               <div class="wrapper  ">   <!-- l'emballage -->
                   <a href="index.html" class="logo">Thérapure</a>
-                  <button class="nav-close-btn" aria-label="close menu" data data-nav-toggle>
+                  <button class="nav-close-btn" aria-label="close menu"  data-nav-toggle>
                     <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
                   </button>
               </div> 
@@ -79,25 +90,28 @@
           </div>
           <div class="overlay  " data-nav-toggle data-overlay></div>
         </div>
-    <section class="banniere pt-5 d-flex flex-column justify-content-center align-item-center  ">
-      <div class="container  text-white my-5 py-5">
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <h1 class=" text-capitalize py-3 banniere-description merriweather">Équilibre & Harmonie : Votre Bien-Être, Notre Priorité. 
-              <br><span class="text-normal" >Retrouvez sérénité et vitalité entre des mains expertes</span></h1>
-            <p >
-              <a href="services.html">
-              
-              <button class="btn btn-order rounded-0 me-4 montserrat">En savoir plus</button>
-              </a>
-              <a href="#enregistrer">
-                <button class="btn btn-outline-info rounded-0 montserrat">Reverser</button>
-              </a>            </p>
-          </div>
-        </div>
+    <section class="banniere pt-5 d-flex flex-column justify-content-center align-items-center">
+  <div class="container text-white my-5 py-5">
+    <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6">
+        <h1 class="text-capitalize py-3 banniere-description merriweather">
+          Équilibre & Harmonie : Votre Bien-Être, Notre Priorité. 
+          <br><span class="text-normal">Retrouvez sérénité et vitalité entre des mains expertes</span>
+        </h1>
+        <p>
+          <a href="services.html">
+            <button class="btn btn-order rounded-0 me-4 montserrat">En savoir plus</button>
+          </a>
+          <a href="#enregistrer">
+            <button class="btn btn-outline-info rounded-0 montserrat">Réserver</button>
+          </a>
+        </p>
       </div>
-    </section> 
+    </div>
+  </div>
+</section>
+
     <section class="disponible montserrat py-5">
       <div class="container">
         <h2 class=" cc-titre montserrat">Découvrez Nos Prestations </h2>
@@ -415,6 +429,7 @@
     <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn1>
       <ion-icon   name="arrow-up" aria-hidden="true"></ion-icon>
     </a>
+    <script src="./assets/js/script.js"></script>
 
     <!-- Script JavaScript Bootstrap (optionnel, pour certains composants comme les modals) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
